@@ -1,0 +1,21 @@
+{
+	"name":"Tracr",
+	"version": "0.1",
+	"description":"Topical lookups based on selected text",
+	"browser_action": {
+    	"default_icon": "img/icon.png",
+    	"default_popup": "popup.html"
+  	},
+	"permissions": [
+		"tabs"
+	],
+	"content_scripts": [
+		{
+			"matches": [ "<all_urls>" ],
+			"css":["css/tracr.css"],
+			"js": ["mustache.js","lib/jquery-1.7.2.min.js","lib/tracr.js"],
+			"run_at": "document_end",
+			"all_frames": true
+		}
+	]
+}

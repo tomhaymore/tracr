@@ -15,7 +15,7 @@
 			"css":["css/tracr.css"],
 			"js": ["lib/mustache.js","lib/jquery-1.7.2.min.js","lib/tracr.js"],
 			"run_at": "document_end",
-			"all_frames": true
+			"all_frames": false
 		}
 	]
 }

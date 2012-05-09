@@ -1,0 +1,18 @@
+.selection_bubble {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background:-webkit-gradient(linear, left top, left bottom, from(#2e88c4), to(#075698));
+}
+
+.right_rail {
+	position: absolute;
+	right:0;
+	top:0;
+	width:50px;
+	height:100%;
+	background-color: #ccc;
+	opacity: .5;
+	border: 1px solid grey;
+}

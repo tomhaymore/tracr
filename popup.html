@@ -1,0 +1,23 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<style>
+  body { width: 300px; }
+  textarea { width: 250px; height: 100px;}
+</style>
+<script>
+function pasteSelection() {
+  chrome.tabs.getSelected(null, function(tab) {
+    chrome.tabs.sendRequest(tab.id, {method: "getSelection"}, function (response) {
+      var text = document.getElementById('text'); 
+      text.innerHTML = response.data;
+    });
+  });
+}
+</script>
+</head>
+<body>
+<textarea id="text"> </textarea>
+<button onclick="pasteSelection(); ">Paste Selection</button>
+</body>
+</html>

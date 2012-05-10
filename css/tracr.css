@@ -30,12 +30,13 @@ img.sidebar_logo {
 }
 
 div.tracr_notification {
+	z-index:999999;
 	width:150px;
 	background-color:#fff;
 	opacity:.8;
 	border: 1px solid #ff5401;
 	border-radius: 2px;
-	top: 15px;
+	top: 20px;
 	right: 50px;
 	position:fixed;
 	box-shadow: 3px 3px 8px #000;

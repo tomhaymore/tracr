@@ -15,6 +15,7 @@ div.logo {
 
 img.sidebar_logo {
 	width:20px;
+	opacity:1;
 }
 
 .right_rail {
@@ -30,16 +31,36 @@ img.sidebar_logo {
 }
 
 div.tracr_notification {
+	font-size: 12px;
 	z-index:999999;
-	width:150px;
+	width:250px;
 	background-color:#fff;
-	opacity:.8;
-	border: 1px solid #ff5401;
-	border-radius: 2px;
+	opacity:.9;
+	border: 2px solid #ff5401;
+	border-radius: 3px;
 	top: 20px;
 	right: 50px;
 	position:fixed;
 	box-shadow: 3px 3px 8px #000;
 	-webkit-box-shadow:	3px 3px 8px #000;
 	visibility:hidden;
+	padding: 5px;
+}
+
+p.tracr_notification_title {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+div.tracr_concepts {
+
+}
+
+p.tracr_byline {
+	font-size: 11px;
+	opacity:.9;
+}
+
+img.tracr_spinner {
+	height: 15px;
 }

@@ -7,15 +7,17 @@
 }
 
 div.logo {
-	width: 25px;
+	width: 45px;
 	position:relative;
 	margin-right: auto;
 	margin-left: auto;
+	opacity:1;
 }
 
-img.sidebar_logo {
-	width:20px;
-	opacity:1;
+div.tracr_icon {
+	margin-left: 4px;
+	margin-bottom: 15px;
+	margin-top:5px;
 }
 
 .right_rail {
@@ -23,11 +25,17 @@ img.sidebar_logo {
 	position: fixed;
 	right:0;
 	top:0;
-	width:30px;
+	width:45px;
 	height:100%;
-	background-color: #ccc;
-	opacity: .5;
+	background-color: #fff;
+	opacity: .8;
 	border: 1px solid grey;
+}
+
+img.sidebar_logo {
+	width:35px;
+	opacity:1;
+	border:none;
 }
 
 div.tracr_notification {
@@ -39,17 +47,20 @@ div.tracr_notification {
 	border: 2px solid #ff5401;
 	border-radius: 3px;
 	top: 20px;
-	right: 50px;
+	right: 60px;
 	position:fixed;
 	box-shadow: 3px 3px 8px #000;
 	-webkit-box-shadow:	3px 3px 8px #000;
 	visibility:hidden;
 	padding: 5px;
+	font-family:"Helvetica";
+	line-height:1.5;
 }
 
 p.tracr_notification_title {
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: bold;
+	color:#ff5401
 }
 
 div.tracr_concepts {
@@ -63,4 +74,43 @@ p.tracr_byline {
 
 img.tracr_spinner {
 	height: 15px;
+}
+
+p.tracr_label {
+	margin-left:5px;
+}
+
+a.tracr_concept {
+	color: #000;
+	cursor: pointer;
+}
+
+a.tracr_concept:hover {
+	color: #ff5401;
+	text-decoration:none;
+}
+
+img.tracr_external_icon {
+	height: 15px;
+	margin-left: 8px;
+	border: none;
+}
+
+img.tracr_plus_icon {
+	height: 15px;
+	border: none;
+	margin-left: 8px;
+}
+
+#tracr_preview_iframe {
+	z-index:999999;
+	position:fixed;
+	top:50px;
+	left:200px;
+	box-shadow: 3px 3px 8px #000;
+	-webkit-box-shadow:	3px 3px 8px #000;
+	border: 2px solid #ff5401;
+	border-radius: 3px;
+	background-color:#fff;
+	opacity:.95;
 }
